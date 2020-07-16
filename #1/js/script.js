@@ -1,3 +1,8 @@
+/* 
+Author: Marcelo Lara  
+Handle input typed range values into RGB colors to apply in square div background color.
+*/
+
 var window = window.addEventListener('load', start);
 
 function start(){
@@ -6,14 +11,17 @@ function start(){
         redValue.value = event.target.value;
         setSquareValue();
     }
+
     function greenRangeChannel(event){
         greenValue.value = event.target.value;
         setSquareValue();
     }
+
     function blueRangeChannel(event){
         blueValue.value = event.target.value;
         setSquareValue();
     }
+
     function setSquareValue(){
         var currentColor = `rgb(${redValue.value},${greenValue.value},${blueValue.value})`
         console.log(currentColor);
