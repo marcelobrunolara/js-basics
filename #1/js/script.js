@@ -7,22 +7,22 @@ var window = window.addEventListener('load', start);
 
 function start(){
 
-    function redRangeChannel(event){
+    function handleRedChannel(event){
         redValue.value = event.target.value;
         setSquareValue();
     }
 
-    function greenRangeChannel(event){
+    function handleGreenChannel(event){
         greenValue.value = event.target.value;
         setSquareValue();
     }
 
-    function blueRangeChannel(event){
+    function handleBlueChannel(event){
         blueValue.value = event.target.value;
-        setSquareValue();
+        setSquareValues();
     }
 
-    function setSquareValue(){
+    function setSquareValues(){
         var currentColor = `rgb(${redValue.value},${greenValue.value},${blueValue.value})`
         console.log(currentColor);
         square.style.backgroundColor = currentColor;
@@ -36,8 +36,8 @@ function start(){
     var greenValue = document.querySelector("#green-value");
     var blueValue = document.querySelector("#blue-value");
     
-    document.querySelector("#red-channel").addEventListener('change', redRangeChannel);
-    document.querySelector("#green-channel").addEventListener('change', greenRangeChannel);
-    document.querySelector("#blue-channel").addEventListener('change', blueRangeChannel);
+    document.querySelector("#red-channel").addEventListener('change', hangleRedChannel);
+    document.querySelector("#green-channel").addEventListener('change', handleGreenChannel);
+    document.querySelector("#blue-channel").addEventListener('change', handleBlueChannel);
 }
 
