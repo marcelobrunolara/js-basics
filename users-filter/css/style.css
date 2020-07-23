@@ -1,0 +1,41 @@
+body{
+    padding: 10%
+}
+h1{
+    text-align: center;
+}
+#search-input{
+    width: 25%;
+}
+
+#search-button{
+    width: 15%;
+}
+
+
+#list-div{
+    text-align: start;
+    float: left;
+    width: 49%;
+    border-radius: 10px;
+    margin-right: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3%;
+}
+
+#stat-div{
+    text-align: start;
+    float: right;
+    width: 49%;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3%;
+}
+
+#inner{
+    padding: 10px;
+}
