@@ -14,10 +14,10 @@ function start(){
     searchButton = document.getElementById("search-button");
     searchInput = document.getElementById("search-input");
     listDiv = document.getElementById("list-div");
-    maleCount = document.getElementById("sexo-masculino");
-    femaleCount = document.getElementById("sexo-feminino");
-    ageSum = document.getElementById("soma-idades");
-    ageAverage = document.getElementById("media-idades");
+    maleCount = document.getElementById("male-gender");
+    femaleCount = document.getElementById("female-gender");
+    ageSum = document.getElementById("age-sum");
+    ageAverage = document.getElementById("average-of-ages");
 
     searchInput.addEventListener('keyup', checkTypedContent);
     searchButton.addEventListener('click',clickAction);
