@@ -10,13 +10,13 @@ function start(){
     function handleRedChannel(event){
 
         redValue.value = event.target.value;
-        setSquareValue();
+        setSquareValues();
     }
 
     function handleGreenChannel(event){
 
         greenValue.value = event.target.value;
-        setSquareValue();
+        setSquareValues();
     }
 
     function handleBlueChannel(event){
